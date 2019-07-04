@@ -1,0 +1,257 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial;
+}
+a{
+    text-decoration: none;
+    color:#777777;
+}
+*{
+  box-sizing:border-box;
+}
+/*
+************************
+   HEADER SECTION
+************************
+*/
+header.header{
+    padding:0px 50px;
+    border-bottom:1px solid #777777;
+    position:fixed;
+    background-color:#fff;
+    top:0;
+  box-sizing:border-box;
+  width:100%;
+}
+
+navbar{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+
+}
+navbar div.title a{
+  right:0;
+  position:absolute;
+  margin-right:20px;
+  font-weight:bold;
+  padding:10px;
+  border:1px solid #00b381;
+  border-radius:5px;
+  display:none;
+}
+navbar div.title a:hover{
+  background-color:#00b381;
+  color:#fff;
+}
+navbar div.title,navbr div.nav-menu {
+   flex:1 1 auto;
+}
+navbar .nav-menu{
+  display:block;
+}
+navbar .nav-menu ul{
+    list-style:none;
+    padding-left:0px;
+}
+navbar .nav-menu ul li{
+    display:inline;
+    padding:0px 10px;
+}
+navbar .nav-menu ul li a{
+    text-decoration: none;
+    color:#444444;
+    font-weight:bold;
+    font-size:16px;
+}
+navbar .nav-menu ul li a:hover,navbar .nav-menu ul li a:active{
+  color:#00b381;
+}
+/*
+************************
+   HERO SECTION
+************************
+*/
+section.hero{
+  margin-top:80px;
+    background-color:#00b381;
+    display:flex;
+    align-items: center;
+    height:600px;
+    text-align:center;
+}
+section.hero div{
+    flex: 1;
+    padding:0px 200px;
+}
+section.hero div h2{
+    font-size:40px;
+    margin-top:0px;
+}
+/*
+************************
+   SERVICES SECTION
+************************
+*/
+
+section.services{
+    padding:50px;
+  
+}
+section.services h2{
+    text-align:center;
+    padding-bottom:10px;
+    font-size:35px;
+    margin-top:0px;
+}
+div.services_container{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+
+}
+.services_container .service{
+    box-shadow:0px 0px 5px #444444;
+    text-align:center;
+    flex:1 1 auto;
+    margin:5px;
+    padding:20px;
+}
+.services_container .service:nth-child(1){
+  background-color:#abc381
+}
+.services_container .service:nth-child(2){
+  background-color:#cba381;
+}
+.services_container .service:nth-child(3){
+  background-color:#abc;
+}
+.services_container .service:nth-child(4){
+  background-color:#a389bc;
+}
+.services_container .service p{
+  color:#444444;
+}
+.services_container .service:hover{
+  background-color:#00b381;
+  color:#fff;
+}
+/*
+************************
+   ABOUT US SECTION
+************************
+*/
+section.about_us{
+    padding:50px;
+    background-color:#00b381;
+    text-align:center;
+}
+section.about_us h2{
+    text-align:center;
+    padding-bottom:10px;
+    font-size:35px;
+    margin-top:0px;
+}
+/*
+************************
+   CONTACT US SECTION
+************************
+*/
+section.contact_us{
+    padding:50px;
+    text-align:center;
+}
+section.contact_us h2{
+    text-align:center;
+    padding-bottom:10px;
+    font-size:35px;
+    margin-top:0px;
+}
+section.contact_us input,section.contact_us textarea,section.contact_us button{
+    width:100%;
+    max-width:768px !important;
+    border:1px solid #444444;
+    padding:20px;
+    background-color:#fff;
+    margin-bottom:10px;
+    color:#444444;
+    box-sizing: border-box;
+}
+section.contact_us input:focus,section.contact_us textarea:focus{
+  border-color:#00b381;
+}
+section.contact_us .submit{
+    background-color:#00b381;
+    margin:0;
+    margin-left:-10px;
+    margin-right:-10px;
+  cursor:pointer;
+}
+section.contact_us .submit:hover{
+  background-color:#222222;
+  color:#f0f0f0;
+}
+/*
+************************
+  FOOTER SECTION
+************************
+*/
+footer{
+    background-color:#222222;
+    color:#ddd;
+    text-align:center;
+    padding:10px 0px;
+}
+@media(max-width:768px){
+  header.header{
+    padding:0px 20px;
+  }
+    navbar{
+        display:block;
+    }
+  
+   navbar .title,navbar .nav-menu{
+        width:100%;
+
+    }
+  navbar div.title{
+    display:flex;
+    align-items:center;
+    flex-direction:row;
+  }
+  navbar div.title a{
+    display:block;
+  }
+
+  
+  navbar .nav-menu{
+    display:none;
+  }
+    navbar .nav-menu ul li{
+        display:block;
+        width:100%;
+        padding:10px 5px;
+      border-top:1px solid #444444;
+    }
+    section.hero{
+        height:400px;
+    }
+    section.hero div{
+        padding:0px 50px;
+
+    }
+
+    div.services_container {
+        display:block;
+    }
+  div.services_container .service{
+    margin-bottom:15px;
+  }
+
+ section.hero,section.services,section.about_us,section.contact_us{
+        padding:50px 20px;
+    }
+}
